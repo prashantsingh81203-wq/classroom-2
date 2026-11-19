@@ -1,0 +1,64 @@
+#box {
+  background-color: blue;
+   color:white; 
+}
+
+
+  
+
+
+* {
+  font-family:"Times New Roman";
+}
+
+
+
+#one{
+  font-family: roboto;
+}
+
+#two{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#three{
+  font-size: 50px;
+}
+
+#one{
+  text-transform:capitalize;
+}
+
+#outer{ 
+  font-size: 25px ;
+}
+
+#inner{ 
+  font-size: 15px ;
+}
+
+
+* {
+  padding:0;
+  margin: 0;
+  color: white;
+}
+
+#navbar{
+  height: 60px;
+  background-color: #0f1111;
+}
+
+button{
+  background-color:yellow;
+}
+
+#logo {
+  color:rgb(228, 228, 14);
+  font-size: 25px;
+}
+
+a{
+  margin-right: 200px;
+}
+
