@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #111827;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #1e3a8a, #7e22ce);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.08);
+        }
+
+        /* About */
+        .about {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 38px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        /* Services */
+        .services {
+            padding: 70px 8%;
+            background: #111827;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 35px 20px;
+            border-radius: 15px;
+            transition: 0.4s;
+            border: 1px solid #334155;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            background: #263750;
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            padding: 25px;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        /* Mobile */
+        @media(max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MyWebsite.</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome To My Website 🚀</h1>
+
+            <p>
+                Create Something Amazing With HTML & CSS.
+                <br>
+                Explore The World Of Web Development!
+            </p>
+
+            <a href="#about" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About Us</h2>
+
+        <p>
+            Welcome to our amazing website! We believe in creativity,
+            innovation and modern technology. Our goal is to create
+            beautiful and user-friendly websites that make a difference.
+            Learn new things, explore new ideas and build your future
+            with web development.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+
+        <h2 class="heading">Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Web Design</h3>
+                <p>
+                    We create beautiful and modern website designs
+                    with attractive layouts.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Development</h3>
+                <p>
+                    Build fast, responsive and powerful websites
+                    using modern technology.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Graphics</h3>
+                <p>
+                    Creative graphics and amazing visual designs
+                    for your projects.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Responsive</h3>
+                <p>
+                    Websites that work perfectly on mobile,
+                    tablet and desktop screens.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contact Us</h2>
+
+        <p>Have a question? We would love to hear from you!</p>
+
+        <p>📧 Email: example@gmail.com</p>
+
+        <p>📞 Phone: +91 9876543210</p>
+
+        <a href="mailto:example@gmail.com" class="btn">
+            Send Email
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyWebsite. All Rights Reserved.</p>
+        <p>Made with ❤️ using HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
+
